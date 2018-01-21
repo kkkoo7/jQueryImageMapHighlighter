@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pyramid Ratio</title>
+    <script src="jquery.min.js"></script>
+    <script src="jquery.maphighlight.min.js"></script>
+</head>
+<body>
+<img src="OfficeIndexImage.png" height="570px" width="500px" usemap="#workmap" class="map"></a>
+<map name="workmap">
+    <area shape="poly" coords="174,55,332,55,360,138,149,138" href="https://www.w3schools.com" target="_blank">
+    <area shape="poly" coords="149,138,360,138,385,220,121,220"href="https://www.w3schools.com/tags/tag_area.asp" target="_blank">
+    <area shape="poly" coords="121,220,385,220,412,307,97,307" href="https://www.w3schools.com/jsref/dom_obj_area.asp" target="_blank">
+    <area shape="poly" coords="97,307,412,307,438,389,69,389" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_areamap" target="_blank">
+    <area shape="poly" coords="69,389,438,389,464,474,43,474" href="https://www.w3schools.com" target="_blank">
+    <area shape="poly" coords="43,474,464,474,492,556,18,556" href="https://www.w3schools.com" target="_blank">
+</map>
+<script type="text/javascript">
+    $(function () {
+        $('.map').maphilight.defaults = {
+            fill: true,
+            fillColor: '000000',
+            fillOpacity: 0.2,
+            stroke: true,
+            strokeColor: 'ff0000',
+            strokeOpacity: 1,
+            strokeWidth: 3,
+            fade: true,
+            alwaysOn: false,
+            neverOn: false,
+            groupBy: false,
+            wrapClass: true,
+            shadow: false,
+            shadowX: 0,
+            shadowY: 0,
+            shadowRadius: 6,
+            shadowColor: '000000',
+            shadowOpacity: 0.8,
+            shadowPosition: 'outside',
+            shadowFrom: false
+        };
+        $('.map').maphilight();
+    });
+
+</script>
+</body>
+</html>
